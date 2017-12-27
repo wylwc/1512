@@ -1,0 +1,14 @@
+<div>
+	<div class="tou">
+		<span ng-repeat="key in data[0].title">{{key}}</span>
+	</div>
+	<div class="main">
+		<dl ng-repeat="key in data[0].main" ui-sref="xiangqing({id:key.id})">
+			<dt><img ng-src={{key.img}} alt=""></dt>
+			<dd>
+				<h2>{{key.name}}</h2>
+				<p>{{key.pin}}<span>{{key.ren}}</span></p>
+			</dd>
+		</dl>
+	</div>
+</div>
